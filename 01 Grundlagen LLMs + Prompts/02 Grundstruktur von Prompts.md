@@ -376,4 +376,4 @@ ITIL-konform, praxisnah, sofort umsetzbar – orientiert an Ratiodata Service-St
 
 Du bist jetzt bestens gerüstet, um KI-Sprachmodelle als echten Mehrwert in deiner Rolle bei Ratiodata einzusetzen – effizient, sicher und mit technischer Präzision.
 
-**Ein Tutorial der Ratiodata KI-Academy**
+**Ein Tutorial der ADG KI-Community**
