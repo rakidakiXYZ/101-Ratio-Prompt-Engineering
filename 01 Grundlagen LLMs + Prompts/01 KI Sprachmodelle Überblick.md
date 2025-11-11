@@ -284,5 +284,5 @@ und nutzt die Möglichkeiten der KI gezielt, um deine Aufgaben bei Ratiodata bes
 
 ---
 
-**© 2025 Ratiodata SE – KI-Leitfaden für IT-Profis**  
-*IT-Lösungen und Managed Services mit Künstlicher Intelligenz*
+**2025 ADG KI-Community**  
+
