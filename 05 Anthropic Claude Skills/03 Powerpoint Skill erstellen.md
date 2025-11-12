@@ -87,7 +87,13 @@ Erstelle dann einen neuen Skill namens "ratiodata-powerpoint", der:
    - Produktmanagement: Feature-Releases, Roadmaps
    - Hardware: Technische Spezifikationen
 
-Erstelle den Skill und gib ihn als ZIP-Datei aus, die ich installieren kann.
+WICHTIG: Erstelle den kompletten Skill mit:
+- SKILL.md (Hauptanweisungen)
+- assets/template.pptx (meine hochgeladene Vorlage)
+- references/design-system.md (extrahierte Design-Infos)
+- references/compliance-guidelines.md (DSGVO, IT-Sicherheit)
+
+Paketiere alles als ZIP-Datei namens "ratiodata-powerpoint.zip" und stelle sie zum Download bereit.
 ```
 
 ### 2.3 Claude arbeitet
@@ -95,28 +101,41 @@ Erstelle den Skill und gib ihn als ZIP-Datei aus, die ich installieren kann.
 Claude wird jetzt:
 1. ✅ Ihre Vorlage analysieren
 2. ✅ Das Design-System extrahieren
-3. ✅ Den Skill erstellen
-4. ✅ Alles als .skill-Datei paketieren
+3. ✅ Den Skill erstellen (SKILL.md, Design-System, Compliance-Richtlinien)
+4. ✅ Alles als ZIP-Datei paketieren mit allen notwendigen Dateien
 
 **Das dauert ca. 2-3 Minuten.**
+
+Claude erstellt eine ZIP-Datei mit dieser Struktur:
+```
+ratiodata-powerpoint.zip
+├── SKILL.md (Hauptanweisungen)
+├── assets/
+│   └── template.pptx (Ihre Vorlage)
+└── references/
+    ├── design-system.md (Farben, Schriften, Layouts)
+    └── compliance-guidelines.md (DSGVO, IT-Sicherheit)
+```
 
 ---
 
 ## Schritt 3: Skill installieren
 
-### 3.1 Skill herunterladen
+### 3.1 ZIP-Datei herunterladen
 
-Claude gibt Ihnen einen Download-Link für die `.skill`-Datei.
-- Dateiname: z.B. `ratiodata-powerpoint.skill`
-- Speichern Sie die Datei auf Ihrem Computer
+Claude gibt Ihnen einen Download-Link für die `.zip`-Datei.
+- Dateiname: z.B. `ratiodata-powerpoint.zip`
+- **Speichern Sie die Datei auf Ihrem Computer**
+- **Nicht entpacken!** Die ZIP-Datei wird direkt hochgeladen
 
 ### 3.2 In Claude installieren
 
 1. Gehen Sie zu **Einstellungen** (Zahnrad-Symbol)
-2. Klicken Sie auf **Skills**
+2. Klicken Sie auf **Skills** (oder **Fähigkeiten**)
 3. Klicken Sie **"Upload Skill"** oder **"Skill hochladen"**
-4. Wählen Sie Ihre `ratiodata-powerpoint.skill` Datei
-5. Bestätigen Sie mit **"Installieren"**
+4. Wählen Sie Ihre `ratiodata-powerpoint.zip` Datei (als ZIP!)
+5. Claude entpackt automatisch und installiert den Skill
+6. Bestätigen Sie mit **"Installieren"**
 
 ### 3.3 Skill aktivieren
 
@@ -222,7 +241,11 @@ Achte besonders auf die Ratiodata-Farben:
 - Hauptblau: #0066CC
 - Cyan: #00A3E0  
 - Dunkelblau: #003D82
+
+Extrahiere diese Farben aus der Vorlage und verwende sie konsequent.
+Erstelle eine neue ZIP-Datei mit dem korrigierten Skill.
 ```
+Neue ZIP-Datei herunterladen und installieren
 
 ### Problem 3: "Logo fehlt"
 
@@ -234,7 +257,10 @@ Achte besonders auf die Ratiodata-Farben:
 3. Im Prompt explizit erwähnen:
 ```
 Verwende das hochgeladene Ratiodata-Logo und platziere es oben rechts auf jeder Folie.
+
+Erstelle eine neue ZIP-Datei mit dem korrigierten Skill.
 ```
+4. Neue ZIP-Datei herunterladen und in Claude hochladen
 
 ### Problem 4: "Atruvia AG fehlt im Footer"
 
@@ -244,7 +270,10 @@ Verwende das hochgeladene Ratiodata-Logo und platziere es oben rechts auf jeder 
 ```
 Footer MUSS IMMER enthalten:
 "© 2025 Ratiodata SE | Eine Tochtergesellschaft der Atruvia AG"
+
+Erstelle eine neue ZIP-Datei mit dem korrigierten Skill.
 ```
+Neue ZIP-Datei herunterladen und installieren
 
 ---
 
@@ -259,6 +288,8 @@ Erweitere meinen ratiodata-powerpoint Skill um:
 - Eine Banking-spezifische Vorlage (konservativere Farben, BaFin-Disclaimer)
 - Eine Healthcare-Vorlage (DSGVO-Hinweise, medizinische Icons)
 - Eine Event-Vorlage (große Bilder, wenig Text)
+
+Paketiere den aktualisierten Skill als neue ZIP-Datei.
 ```
 
 ### Wenn Sie andere Layouts brauchen
@@ -267,7 +298,15 @@ Erweitere meinen ratiodata-powerpoint Skill um:
 Füge eine neue Folie zum ratiodata-powerpoint Skill hinzu:
 - "Service-Level-Vergleich" mit 3-Spalten-Tabelle
 - Verwendung für: SLA-Dokumentationen
+
+Erstelle eine neue ZIP-Datei mit dem erweiterten Skill.
 ```
+
+**Wichtig:** Nach jeder Änderung am Skill:
+1. Claude erstellt eine neue ZIP-Datei (z.B. `ratiodata-powerpoint-v2.zip`)
+2. Laden Sie die alte Version in Claude
+3. Installieren Sie die neue Version
+4. Aktivieren Sie den aktualisierten Skill
 
 ---
 
@@ -275,9 +314,10 @@ Füge eine neue Folie zum ratiodata-powerpoint Skill hinzu:
 
 ### Option 1: Direkt teilen
 
-1. Ihre `.skill`-Datei per E-Mail oder Intranet teilen
+1. Ihre `ratiodata-powerpoint.zip`-Datei per E-Mail oder Intranet teilen
 2. Kollegen installieren wie in Schritt 3 beschrieben
-3. Fertig!
+3. **Wichtig:** ZIP-Datei nicht entpacken, direkt in Claude hochladen!
+4. Fertig!
 
 ### Option 2: Quick-Start-Mail
 
@@ -292,9 +332,10 @@ ich habe einen Skill erstellt, der automatisch PowerPoint-Präsentationen
 im Ratiodata CI erstellt.
 
 Installation:
-1. Skill-Datei herunterladen: [Link zur .skill-Datei]
-2. In Claude: Einstellungen → Skills → Upload
-3. Skill aktivieren
+1. ZIP-Datei herunterladen: [Link zur ratiodata-powerpoint.zip]
+2. In Claude: Einstellungen → Skills → Upload Skill
+3. ZIP-Datei auswählen (NICHT entpacken!)
+4. Skill aktivieren
 
 Verwendung:
 "Erstelle eine Ratiodata-Präsentation über [Thema], [X] Folien"
@@ -455,7 +496,15 @@ Erstelle dann einen neuen Skill namens "ratiodata-powerpoint", der:
    - Footer automatisch generieren
    - Compliance-Check vor Finalisierung
 
-Erstelle den Skill, validiere ihn und gib ihn als installationsfähige .skill-Datei aus.
+WICHTIG - AUSGABE:
+Erstelle den kompletten Skill mit folgender Struktur:
+- SKILL.md (Hauptanweisungen für den Skill)
+- assets/template.pptx (meine hochgeladene PowerPoint-Vorlage)
+- references/design-system.md (extrahierte Design-Informationen)
+- references/compliance-guidelines.md (DSGVO, IT-Sicherheit, Branchenregulierung)
+
+Validiere den Skill und paketiere ALLES als ZIP-Datei namens "ratiodata-powerpoint.zip".
+Stelle die ZIP-Datei zum Download bereit.
 ```
 
 ---
