@@ -1,4 +1,3 @@
-Ich überarbeite das Tutorial jetzt für Ratiodata SE im Markdown-Format. Lass mich das Dokument zuerst lesen und dann anpassen.Ich erstelle jetzt das angepasste Tutorial für Ratiodata SE im Markdown-Format:
 
 # Prompt für den KI-Assistenten zur Erstellung von Management-Unterlagen (Ratiodata SE)
 
