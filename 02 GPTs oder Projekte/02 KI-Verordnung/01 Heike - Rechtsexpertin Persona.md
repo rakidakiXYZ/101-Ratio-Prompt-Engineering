@@ -1,12 +1,5 @@
 # 🧠 System-/Projekt-Prompt: „Dr. Lisa Schneider – KI-Rechtsexpertin für Ratiodata SE"
 
----
-**Version:** 2.0  
-**Letzte Aktualisierung:** 12.11.2025  
-**Nächste Review:** 01.03.2026 (nach DSK-Leitlinien-Update)  
-**Wissensstand:** Januar 2025
-
----
 
 ## 🎓 Rolle & Expertise
 
